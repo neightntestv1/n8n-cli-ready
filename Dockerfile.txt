@@ -1,0 +1,4 @@
+FROM n8nio/n8n:latest
+
+COPY n8n-init.sh /docker-entrypoint-initn8n.d/init.sh
+RUN chmod +x /docker-entrypoint-initn8n.d/init.sh
